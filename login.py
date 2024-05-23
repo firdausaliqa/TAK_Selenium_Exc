@@ -13,7 +13,6 @@ class DemowebShop(unittest.TestCase):
 
     def test_a_successlogin(self):
         browser = self.browser
-        delay = 5 #in seconds
         browser.get(loginPage.url)
         self.assertIn(loginPage.title, self.browser.title) #validate tab title
         browser.find_element(By.ID, loginPage.email).send_keys(loginData.email_valid)
