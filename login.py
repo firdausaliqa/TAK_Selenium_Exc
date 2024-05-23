@@ -21,6 +21,12 @@ class DemowebShop(unittest.TestCase):
         browser.find_element(By.XPATH, loginPage.login_btn).click()
         login_log = browser.find_element(By.CSS_SELECTOR, regisPage.cust_info).text
         self.assertEqual(loginData.email_valid, login_log) #validate logged in email
-
+    
+    def test_baseLogin(browser, email_valid, passw_valid):
+        browser.find_element(By.ID, loginPage.email).send_keys(email_valid)
+        browser.find_element(By.ID, loginPage.passw).send_keys(passw_valid)
+        browser.find_element(By.ID, loginPage.rme).click()
+        browser.find_element(By.XPATH, loginPage.login_btn).click()
+        
 if __name__ == '__main__':
     unittest.main()
