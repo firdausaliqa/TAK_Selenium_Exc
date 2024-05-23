@@ -15,3 +15,4 @@ class regisPage():
     email_errmsg = "/html/body/div[4]/div[1]/div[4]/div[2]/form/div/div[2]/div[2]/div[2]/div[4]/span[2]/span"
     passw_errmsg = "/html/body/div[4]/div[1]/div[4]/div[2]/form/div/div[2]/div[3]/div[2]/div[1]/span[2]/span"
     confpassw_errmsg = "/html/body/div[4]/div[1]/div[4]/div[2]/form/div/div[2]/div[3]/div[2]/div[2]/span[2]/span"
+    cust_info = ".header-links > ul  .account"
