@@ -10,6 +10,10 @@ class loginData():
     email_unreg = 'firdaus@gmail.com'
     passw_invalid = '1234'
     passw_unmatch = '12345678'
+    city = 'Malang'
+    address = 'Simpang Danau Limboto A4'
+    zip = '65111'
+    phone = '08123456789'
 
 class loginPage():
     url = 'https://demowebshop.tricentis.com/login'
